@@ -6,3 +6,6 @@
 
 - name: set config file of HAProxy
   template: src=haproxy.cfg dest=/etc/haproxy.cfg
+  notify:
+   - restart haproxy
+

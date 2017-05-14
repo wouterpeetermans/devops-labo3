@@ -2,3 +2,6 @@
   become: true
   roles:
    - lb
+
+  handlers:
+   - include: handlers/haproxy-handlers.yml
