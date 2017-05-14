@@ -1,0 +1,4 @@
+- hosts: cash
+  become: true
+  roles:
+   - cash
